@@ -1,5 +1,7 @@
-import datetime, time
-import os
+import datetime, time, os, colorama
+from colorama import Fore
+
+colorama.init()
 
 num = u"\u2593" *2
 zero = [num * 3, '\n', f'{num}  {num}', '\n', f'{num}  {num}', '\n', f'{num}  {num}', '\n', num * 3,'\n']
@@ -22,7 +24,7 @@ def search(obj):
 def read(n):
     i = 0
     for a in range(0,10,2):
-        print(n[0][i], n[1][i], n[2][i], n[3][i], n[4][i],n[5][i], n[6][i], n[7][i], sep=' ', end='\n')
+        print(Fore.BLUE + n[0][i], n[1][i], n[2][i], n[3][i], n[4][i],n[5][i], n[6][i], n[7][i], sep=' ', end='\n')
         i +=2
         
 while True:
