@@ -1,4 +1,4 @@
-import datetime
+import datetime, time
 import os
 
 num = u"\u2593" *2
@@ -26,9 +26,10 @@ def read(n):
         i +=2
         
 while True:
-    time = datetime.datetime.now().time()
+    time_now = datetime.datetime.now().time()
     st_time = time.strftime('%H.%M.%S')
     x = [(sl.get(st_time[0])), (sl.get(st_time[1])), dot, (sl.get(st_time[3])),
     (sl.get(st_time[4])), dot, (sl.get(st_time[6])), (sl.get(st_time[7]))]
     read(x)
+    time.sleep(1)
     os.system('cls')
