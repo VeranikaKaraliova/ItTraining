@@ -5,7 +5,7 @@ colorama.init()
 
 num = u"\u2593" *2
 zero = [num * 3, '\n', f'{num}  {num}', '\n', f'{num}  {num}', '\n', f'{num}  {num}', '\n', num * 3,'\n']
-one = [num, '\n', num, '\n', num, '\n', num, '\n', num, '\n']
+one = [f'    {num}', '\n', f'    {num}', '\n', f'    {num}', '\n', f'    {num}', '\n', f'    {num}', '\n']
 two = [num *3, '\n', f'    {num}', '\n', num * 3, '\n', f'{num}    ','\n', num *3, '\n']
 three = [num * 3, '\n', f'    {num}', '\n', num * 3, '\n', f'    {num}', '\n', num * 3, '\n']
 four = [f'{num}  {num}', '\n', f'{num}  {num}', '\n', num * 3, '\n', f'    {num}', '\n', f'    {num}', '\n']
